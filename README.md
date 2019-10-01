@@ -1,6 +1,8 @@
 # Custom boot loader
 This is a custom boot loader for RZ/A2M. By using the custom boot loader, you can drag & drop the ".bin" file to write the program.  
 
+## Latest revision
+revision 2
 
 ## How to use a custom boot loader
 Add ``target.bootloader_img`` and ``target.app_offset`` to your project's ``mbed_app.json`` file as below.    
@@ -11,17 +13,22 @@ Add ``target.bootloader_img`` and ``target.app_offset`` to your project's ``mbed
       ==== omit ====
         "RZ_A2M_EVB": {
             "target.bootloader_img" : "bootloader_d_n_d/RZ_A2M_EVB_boot.bin",
-            "target.app_offset"     : "0x20000",
+            "target.app_offset"     : "0x40000",
+            === omit ===
+        },
+        "RZ_A2M_EVB_HF": {
+            "target.bootloader_img" : "bootloader_d_n_d/RZ_A2M_EVB_HF_boot.bin",
+            "target.app_offset"     : "0x40000",
             === omit ===
         },
         "RZ_A2M_SBEV": {
             "target.bootloader_img" : "bootloader_d_n_d/RZ_A2M_SBEV_boot.bin",
-            "target.app_offset"     : "0x20000",
+            "target.app_offset"     : "0x40000",
             === omit ===
         },
         "SEMB1402": {
             "target.bootloader_img" : "bootloader_d_n_d/SEMB1402_boot.bin",
-            "target.app_offset"     : "0x20000",
+            "target.app_offset"     : "0x40000",
             === omit ===
         }
     }
