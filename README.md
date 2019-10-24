@@ -2,7 +2,7 @@
 This is a custom boot loader for RZ/A2M. By using the custom boot loader, you can drag & drop the ".bin" file to write the program.  
 
 ## Latest revision
-revision 2
+revision 3
 
 ## How to use a custom boot loader
 Add ``target.bootloader_img`` and ``target.app_offset`` to your project's ``mbed_app.json`` file as below.    
