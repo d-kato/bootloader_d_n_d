@@ -11,6 +11,11 @@ Add ``target.bootloader_img`` and ``target.app_offset`` to your project's ``mbed
   ==== omit ====
     "target_overrides": {
       ==== omit ====
+        "GR_MANGO": {
+            "target.bootloader_img" : "bootloader_d_n_d/GR_MANGO_boot.bin",
+            "target.app_offset"     : "0x40000",
+            === omit ===
+        },
         "RZ_A2M_EVB": {
             "target.bootloader_img" : "bootloader_d_n_d/RZ_A2M_EVB_boot.bin",
             "target.app_offset"     : "0x40000",
@@ -37,7 +42,7 @@ Add ``target.bootloader_img`` and ``target.app_offset`` to your project's ``mbed
 
 Build the program. Two files ``xxxx.bin`` and ``xxxx_application.bin`` are created.  
 
-1. Hold down ``SW3`` and press the reset button. (Or turn on the power.)  
+1. Hold down ``SW3 (USB0)`` and press the reset button. (Or turn on the power.)  
 2. Connect the USB cable to the PC, you can find the ``MBED`` directory.  
 3. Drag & drop ``xxxx_application.bin`` to the ``MBED`` directory.  
 4. When writing is completed, press the reset button.  
