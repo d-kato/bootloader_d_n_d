@@ -79,9 +79,9 @@ For the first time only, you need to write a ``custom bootloader`` using ``DAPLi
 ### For other boards
 1. Connect the USB cable to the PC.  
 2. Hold down ``SW3 (USB0)`` and press the reset button. (Or turn on the power.)  
-2. You can find the ``MBED`` directory.  
-3. Drag & drop ``xxxx_application.bin`` to the ``MBED`` directory.  
-4. When writing is completed, press the reset button.  
+3. You can find the ``MBED`` directory.  
+4. Drag & drop ``xxxx_application.bin`` to the ``MBED`` directory.  
+5. When writing is completed, press the reset button.  
 
 **Attention!**  
 For the first time only, you need to write a ``custom bootloader`` as following.  
